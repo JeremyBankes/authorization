@@ -9,6 +9,7 @@ A Node module for verifying client authorization
 ```js
 const authorization = require('./modules/authorization/authorization.js');
 
+// Don't forget to load roles
 authorization.loadRoles(require('./roles.json'));
 
 const user = { _id: 5, roleIds: ['driver'] };
